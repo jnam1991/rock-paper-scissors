@@ -1,0 +1,1 @@
+let playerOneInput = prompt("Rock, paper, or scissors?", "Please type: rock, paper, or scissors");
