@@ -1,4 +1,27 @@
-let CpuInput = "rock";
+function randomWordGen(randomLetterGen){
+
+
+    function randomLetterGen(){
+
+        function randomNumGen(){
+            return Math.floor(Math.random()*2);
+        }
+
+        let word = "rp";
+        return word.charAt(randomNumGen());
+    }
+
+    if (randomLetterGen() == "r"){
+        console.log("rock")
+    } else if (randomLetterGen() == "p"){
+        console.log("paper")
+    } else {
+        console.log("scissors")
+    }
+
+}
+
+randomWordGen();
 
 showConfirm();
 
