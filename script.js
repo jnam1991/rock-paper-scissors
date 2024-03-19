@@ -11,81 +11,81 @@ function getComputerChoice(randomLetterGen){
         return word.charAt(randomNumGen());
     }
 
+    let cpuInput;
+
     if (randomLetterGen() == "r"){
-        let cpuInput = "rock";
+        cpuInput = "rock";
     } else if (randomLetterGen() == "p"){
-        let cpuInput = "paper";
+        cpuInput = "paper";
     } else {
-        let cpuInput = "scissors";
+        cpuInput = "scissors";
     }
 
+    return cpuInput;
 }
 
-let cpuInput = getComputerChoice();
-
+showConfirm();
 
 function showConfirm(){
 
     let playerOneInput = prompt("Rock, paper, or scissors?", "Please type: rock, paper, or scissors");
 
-    if (playerOneInput === "rock" && cpuInput === "rock"){
+    if (playerOneInput === "rock" && getComputerChoice === "rock"){
 
         console.log("You and your oponent both chose rock. Its a tie!");
 
-        showConfirm();
+        
     
-    } else if (playerOneInput === "rock" && cpuInput === "paper"){
+    } else if (playerOneInput === "rock" && getComputerChoice === "paper"){
     
         console.log("You chose rock and your oponent chose paper. You lose.");
 
-        showConfirm();
+        
     
-    } else if (playerOneInput === "rock" && cpuInput === "scissors"){
+    } else if (playerOneInput === "rock" && getComputerChoice === "scissors"){
     
         console.log("You chose rock and your oponent chose scissors. You win!");
 
-        showConfirm();
+        
     
-    } else if (playerOneInput === "paper" && cpuInput === "paper"){
+    } else if (playerOneInput === "paper" && getComputerChoice === "paper"){
     
         console.log("You and your oponent chose paper. Its a tie!");
 
-        showConfirm();
+        
     
-    } else if (playerOneInput === "paper" && cpuInput === "scissors"){
+    } else if (playerOneInput === "paper" && getComputerChoice === "scissors"){
     
         console.log("You chose paper and your oponent chose scissors. You lose.");
 
-        showConfirm();
+        
     
-    } else if (playerOneInput === "paper" && cpuInput === "rock"){
+    } else if (playerOneInput === "paper" && getComputerChoice === "rock"){
     
         console.log("You chose paper and your oponent chose rock. You win!");
 
-        showConfirm();
+        
     
-    } else if (playerOneInput === "scissors" && cpuInput === "scissors"){
+    } else if (playerOneInput === "scissors" && getComputerChoice === "scissors"){
     
         console.log("You and your oponent chose scissors. Its a tie!");
 
-        showConfirm();
+        
     
-    } else if (playerOneInput === "scissors" && cpuInput === "rock"){
+    } else if (playerOneInput === "scissors" && getComputerChoice === "rock"){
     
         console.log("You chose scissors and your oponent chose rock. You lose.");
 
-        showConfirm();
+        
     
-    } else if (playerOneInput === "scissors" && cpuInput === "paper"){
+    } else if (playerOneInput === "scissors" && getComputerChoice === "paper"){
     
         console.log("You chose scissors and your oponent chose paper. You win!");
 
-        showConfirm();
     
     } else {
-    
-        showConfirm();
-    
-    }
 
+        showConfirm();
+
+    }
 }
