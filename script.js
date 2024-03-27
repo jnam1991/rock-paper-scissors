@@ -1,22 +1,10 @@
-function randomLetterGen(){
-
-    function randomNumGen(){
-        return Math.floor(Math.random()*3);
-    }
-
-    let word = "rps";
-    return word.charAt(randomNumGen());
-}
-
-console.log(randomLetterGen());
-
-/*function getComputerChoice(randomLetterGen){
+function getComputerChoice(randomLetterGen){
 
 
     function randomLetterGen(){
 
         function randomNumGen(){
-            return Math.floor(Math.random()*2);
+            return Math.floor(Math.random()*3);
         }
 
         let word = "rps";
@@ -31,12 +19,13 @@ console.log(randomLetterGen());
         cpuInput = "paper";
     } else if (randomLetterGen() == "s") {
         cpuInput = "scissors";
+    } else if (randomLetterGen() !== "r" || "p" || "s"){
+        cpuInput = getComputerChoice();
     }
 
     return cpuInput;
-}
 
-console.log(getComputerChoice());
+}
 
 
 function showConfirm(){
@@ -104,4 +93,4 @@ function showConfirm(){
 
 }
 
-showConfirm();*/
+showConfirm();
