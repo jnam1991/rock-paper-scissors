@@ -1,4 +1,16 @@
-function getComputerChoice(randomLetterGen){
+function randomLetterGen(){
+
+    function randomNumGen(){
+        return Math.floor(Math.random()*3);
+    }
+
+    let word = "rps";
+    return word.charAt(randomNumGen());
+}
+
+console.log(randomLetterGen());
+
+/*function getComputerChoice(randomLetterGen){
 
 
     function randomLetterGen(){
@@ -7,7 +19,7 @@ function getComputerChoice(randomLetterGen){
             return Math.floor(Math.random()*2);
         }
 
-        let word = "rp";
+        let word = "rps";
         return word.charAt(randomNumGen());
     }
 
@@ -17,12 +29,15 @@ function getComputerChoice(randomLetterGen){
         cpuInput = "rock";
     } else if (randomLetterGen() == "p"){
         cpuInput = "paper";
-    } else {
+    } else if (randomLetterGen() == "s") {
         cpuInput = "scissors";
     }
 
     return cpuInput;
 }
+
+console.log(getComputerChoice());
+
 
 function showConfirm(){
 
@@ -80,12 +95,13 @@ function showConfirm(){
     
         console.log("You chose scissors and your oponent chose paper. You win!");
 
-    
     } else {
 
-        showConfirm();
+        return playerOneInput;
 
     }
+
+
 }
 
-showConfirm();
+showConfirm();*/
