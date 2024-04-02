@@ -1,4 +1,4 @@
-function getComputerChoice(randomLetterGen){
+function getComputerChoice(){
 
 
     function randomLetterGen(){
@@ -11,19 +11,15 @@ function getComputerChoice(randomLetterGen){
         return word.charAt(randomNumGen());
     }
 
-    let cpuInput;
+    let cpuInput = randomLetterGen();
 
-    if (randomLetterGen() == "r"){
-        cpuInput = "rock";
-    } else if (randomLetterGen() == "p"){
-        cpuInput = "paper";
-    } else if (randomLetterGen() == "s") {
-        cpuInput = "scissors";
-    } else if (randomLetterGen() !== "r" || "p" || "s"){
-        cpuInput = getComputerChoice();
+    if (cpuInput == "r"){
+        return "rock";
+    } else if (cpuInput == "p"){
+        return "paper";
+    } else if (cpuInput == "s") {
+        return "scissors";
     }
-
-    return cpuInput;
 
 }
 
