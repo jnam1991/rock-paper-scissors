@@ -34,63 +34,63 @@ function showConfirm(){
 
         alert("You and your oponent both chose rock. Its a tie!");
 
-        start;
+        showConfirm();
     
     } else if (playerOneInput === "rock" && cpuChoice === "paper"){
     
         alert("You chose rock and your oponent chose paper. You lose.");
 
-        start;
+        showConfirm();
     
     } else if (playerOneInput === "rock" && cpuChoice === "scissors"){
     
         alert("You chose rock and your oponent chose scissors. You win!");
 
-        start;
+        showConfirm();
 
     } else if (playerOneInput === "paper" && cpuChoice === "paper"){
     
         alert("You and your oponent chose paper. Its a tie!");
 
-        start;
+        showConfirm();
     
     } else if (playerOneInput === "paper" && cpuChoice === "scissors"){
     
         alert("You chose paper and your oponent chose scissors. You lose.");
 
-        start;
+        showConfirm();
     
     } else if (playerOneInput === "paper" && cpuChoice === "rock"){
     
         alert("You chose paper and your oponent chose rock. You win!");
 
-        start;
+        showConfirm();
 
     } else if (playerOneInput === "scissors" && cpuChoice === "scissors"){
     
         alert("You and your oponent chose scissors. Its a tie!");
 
-        start;
+        showConfirm();
     
     } else if (playerOneInput === "scissors" && cpuChoice === "rock"){
     
         alert("You chose scissors and your oponent chose rock. You lose.");
 
-        start;
+        showConfirm();
     
     } else if (playerOneInput === "scissors" && cpuChoice === "paper"){
     
         alert("You chose scissors and your oponent chose paper. You win!");
 
-        start;
+        showConfirm();
 
     } else {
 
-        start;
+        showConfirm();
 
     }
 
 
 }
 
-let start = showConfirm();
+showConfirm();
